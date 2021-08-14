@@ -1,7 +1,0 @@
-numpy
-joblib
-uvicorn
-typing
-fastapi
-Pedantic
-gunicorn
