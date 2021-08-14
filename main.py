@@ -44,3 +44,7 @@ async def predict_spam(content: str):
         confidence_score = round(abs(model.decision_function([content])[0]),4)
 
         return {"Prediction":prediction,"Confidence Score": confidence_score}
+  
+if __name__ == '__main__':
+
+    uvicorn.run(app, host='127.0.0.1', port=5000, debug=True)
