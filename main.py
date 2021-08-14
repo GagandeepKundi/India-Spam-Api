@@ -9,7 +9,7 @@ from fastapi import FastAPI
 
 from pydantic import BaseModel
 
-model = joblib.load(open("/Users/brl.314/Downloads/india_spam_aug_2.pkl","rb"))  
+model = joblib.load(open("india_spam_aug_2.pkl","rb"))  
 
 def pred(x):
 
