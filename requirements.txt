@@ -4,3 +4,4 @@ uvicorn
 typing
 fastapi
 Pedantic
+gunicorn
