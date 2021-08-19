@@ -43,7 +43,7 @@ async def predict_spam(content: str):
         confidence_score = round(abs(model.decision_function([content])[0]),4)
             
         if confidence_score > 0.7 and prediction=='Spam':
-            decision = "Delete it"
+            decision = "Hide it"
         if confidence_score > 0.7 and prediction=='Not Spam':
             decision = "Keep it"
         if confidence_score < 0.7 and prediction=='Spam':
